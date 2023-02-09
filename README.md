@@ -7,4 +7,4 @@ Imagen random: https://cataas.com/cat/says/hello (la API no funciona) - Usé otr
 
 - Recupera un hecho aleatorio de gatos de la primera API
 - Recuperar la primera palabra del hecho
-- Muestra una imagen de un gato con la primera palabra.
+- Muestra una imagen de un gato con la primera palabra. (Este endopoint no se puede realiar porque la nueva API no lo permite :( )
