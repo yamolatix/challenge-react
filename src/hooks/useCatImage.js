@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react"
+import { useState, useEffect } from "react"
 const CAT_RANDOM_IMAGE_ENDPOINT = `https://api.thecatapi.com/v1/images/search?api_key=live_iQ6gwaeNezmTLigcPX4aXpmkOqXLWqPA1Bfvt3grnKxXBSymMFma8jg9gQ7elr4x`
 
-export function useCatImage({ fact }) {
+export const useCatImage = ({ fact }) => {
     const [imageUrl, setImageUrl] = useState()
 
     useEffect(() => {
@@ -12,7 +12,7 @@ export function useCatImage({ fact }) {
                 const { url } = data[0]
                 setImageUrl(url)
             })
-    }, [fact])
+    }, [fact]);
 
-    return { imageUrl }
-}
+    return { imageUrl };
+};
